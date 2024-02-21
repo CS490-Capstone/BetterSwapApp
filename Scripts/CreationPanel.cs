@@ -169,8 +169,11 @@ public class CreationPanel : MonoBehaviour
                 deleter.WriteLine(message);
             }
             deleter.Close();
-
-            stagenum--;
+            if (stagenum > 0)
+            {
+                stagenum--;
+            }
+            
         }
         
 
